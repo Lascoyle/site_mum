@@ -1,0 +1,250 @@
+/*Nettoyage de la page*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+  }
+
+
+/*Image fond de page*/
+
+html
+{
+    background: url(images/wood.jpg) no-repeat center;
+    background-size: cover;
+    )
+}
+
+
+/*Définition du header*/
+
+img
+{
+    width: 100%;
+    border: white double 10px;
+}
+
+h1
+{
+    position: absolute;
+    z-index: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: -210px;
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-weight: normal;
+}
+
+
+
+/*Définition de la navigation*/
+
+ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgb(63, 63, 63);
+    border-bottom: white double 10px;
+    border-top: white solid 5px;
+}
+
+li
+{
+    display: inline;
+    width: 25%;
+    border-bottom: white double 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgb(63, 63, 63);
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+}
+
+
+
+/*Définition du main*/
+
+h2
+{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    color:  rgb(47, 47, 47);
+    font-weight: normal;
+    text-align: center;
+}
+
+h3
+{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#présentation, #travaux, #contact
+{
+    background: rgba(255, 255, 255, 0.8);
+    border: double whitesmoke 10px; 
+    width: 70%;
+    min-width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#travaux
+{
+    width: 100%;
+}
+
+#travaux img
+{
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.snoods_galerie, .gilets_galerie, .sujets_galerie
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+p
+{
+    color: dimgray; 
+    margin-top: 10px;
+    font-size: 1rem; 
+}
+
+
+main a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*Définition du formulaire*/
+
+form
+{
+    background: lightgray;
+    border: double white 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+label
+{
+    width: 100px;
+    display: block;
+    margin-top: 30px;   
+}
+
+
+
+/*Définition du footer*/
+
+footer
+{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background: rgb(47, 47, 47);
+    padding: 20px;
+}
+
+footer p
+{
+    color: white;
+}
+
+h4
+{
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-style: normal;
+}
+
+#contact img
+{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    height: 70px;
+    width: 70px;
+
+}
+
+/*Responsive design*/
+
+@media screen and (min-width 960px)
+{
+    h1
+    {
+        font-size: 7rem;
+    }
+
+    h2
+    {
+        font-size: 3rem;
+    }
+
+    h3
+    {
+        font-size: 3rem;
+    }
+
+    a
+    {
+        font-size: 2.5rem;
+    }
+
+    p
+    {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (min-width 1024px)
+{
+
+}
