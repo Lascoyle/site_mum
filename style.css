@@ -27,6 +27,19 @@ html
     )
 }
 
+/*Annulation police balise strong*/
+
+strong, em
+{
+    font-weight: normal;
+}
+
+/*Police générale de la page*/
+
+main
+{
+    font-family: Verdana, Geneva, Tahoma, serif;
+}
 
 /*Définition du header*/
 
@@ -43,7 +56,7 @@ h1
     margin-left: 50px;
     margin-right: 50px;
     margin-top: -210px;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: 'Great Vibes', cursive;
     color: white;
     font-weight: normal;
@@ -53,22 +66,22 @@ h1
 
 /*Définition de la navigation*/
 
-ul
+nav ul
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
     justify-content: space-between;
     background: rgb(63, 63, 63);
     border-bottom: white double 10px;
     border-top: white solid 5px;
 }
 
-li
+nav li
 {
     display: inline;
-    width: 25%;
+    min-width: 25%;
     border-bottom: white double 10px;
     padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
     background: rgb(63, 63, 63);
 }
@@ -119,7 +132,8 @@ main
     min-width: 50%;
     margin: auto;
     margin-top: 50px;
-    padding: 50px;
+    padding: 20px;
+    padding-bottom: 50px; 
 }
 
 #travaux
@@ -130,8 +144,8 @@ main
 #travaux img
 {
     display: block;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     margin: 10px;
 }
 
@@ -146,7 +160,8 @@ p
 {
     color: dimgray; 
     margin-top: 10px;
-    font-size: 1rem; 
+    font-size: 0.8rem;
+    margin: 20px; 
 }
 
 
@@ -173,10 +188,27 @@ label
 {
     width: 100px;
     display: block;
-    margin-top: 30px;   
+    margin-top: 30px;
+    font-size: 1rem;   
 }
 
+.menu
+{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem; 
+}
 
+#contact img
+{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    height: 70px;
+    width: 70px;
+
+}
 
 /*Définition du footer*/
 
@@ -192,6 +224,7 @@ footer
 footer p
 {
     color: white;
+    font-size: 0.5em;
 }
 
 h4
@@ -201,24 +234,16 @@ h4
     font-style: normal;
 }
 
-#contact img
-{
-    display: block;
-    margin: auto;
-    margin-top: 40px;
-    border: none;
-    height: 70px;
-    width: 70px;
 
-}
 
 /*Responsive design*/
 
-@media screen and (min-width 960px)
+
+@media screen and (min-width: 760px)
 {
     h1
     {
-        font-size: 7rem;
+        font-size: 5.5rem;
     }
 
     h2
@@ -228,23 +253,46 @@ h4
 
     h3
     {
-        font-size: 3rem;
-    }
-
-    a
-    {
         font-size: 2.5rem;
     }
 
     p
     {
+        font-size: 1rem;
+    }
+
+    .menu
+    {
         font-size: 1.5rem;
     }
 
-}
-
-
-@media screen and (min-width 1024px)
+    #travaux img
 {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+}
+}
+    
 
+@media screen and (min-width: 1024px)
+{
+    h1
+    {
+        font-size: 8rem;
+    }
+
+    h2
+    {
+        font-size: 3rem;
+    }
+
+    h3
+    {
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    } 
 }
